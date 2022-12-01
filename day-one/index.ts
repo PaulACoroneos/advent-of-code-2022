@@ -27,7 +27,7 @@ fs.readFile(
     console.log('elf with max cals',Math.max(...summedInventoryPerElf))
 
     //part-two
-    const sortedElfInventoryDescending = summedInventoryPerElf.sort((a,b) => b-a);
+    summedInventoryPerElf.sort((a,b) => b-a);
     console.log('sum of top 3 elves calories', summedInventoryPerElf[0] + summedInventoryPerElf[1] + summedInventoryPerElf[2])
   }
 );
